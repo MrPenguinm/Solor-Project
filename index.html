@@ -21,7 +21,7 @@
    <header class="headNav">
     <div class="container">
         <a href="#" class="log">
-            <img src="logo.jpg" alt="My logo" loading="lazy">
+            <img src="imge/Mr.Penguin.jpg" alt="My logo" >
         </a>
         <nav class="nav">
             <ul>
@@ -77,10 +77,10 @@
             </div>
             <div class="box 2">
                 <div class="imge">
-                    <img src="imge/section-1.png" alt="section" loading="lazy">
+                    <img src="imge/section-1.png" alt="section" >
                 </div>
                 <div class="box-imge">
-                    <img src="imge/Solar Charging.png" alt="section" loading="lazy">
+                    <img src="imge/Solar Charging.png" alt="section" >
                     <p>The Piece That Sold Me On This Polarizing Trend</p>
                 </div>
                 
@@ -107,7 +107,7 @@
             <div class="container">
                     <!-- Box-1 -->
                     <div class="box">
-                        <img src="imge/box-1.png" alt="this is imge" loading="lazy">
+                        <img src="imge/box-1.png" alt="this is imge" >
                         <div class="info">
                             <h3>Off Grid</h3>
                             <p>WOC has contributed to students so that they can work in their dream company, we will continue to stick to our commitment to create an advanced generation,</p>
@@ -119,7 +119,7 @@
                     </div>
                     <!-- Box-2 -->
                     <div class="box">
-                        <img src="imge/box-2.png" alt="this is imge" loading="lazy">
+                        <img src="imge/box-2.png" alt="this is imge" >
                         <div class="info">
                             <h3>on Grid</h3>
                             <p>WOC has contributed to students so that they can work in their dream company, we will continue to stick to our commitment to create an advanced generation,</p>
@@ -131,7 +131,7 @@
                     </div>
                     <!-- Box-3 -->
                     <div class="box">
-                        <img src="imge/box-3.png" alt="this is imge" loading="lazy">
+                        <img src="imge/box-3.png" alt="this is imge" >
                         <div class="info">
                             <h3>Hybrid</h3>
                             <p>WOC has contributed to students so that they can work in their dream company, we will continue to stick to our commitment to create an advanced generation,</p>
@@ -171,8 +171,7 @@
                 <div class="cards">
                     <!-- Card 1 -->
                     <div class="card">
-                      <div class="card-image">
-                        <img src="logo.jpg" alt="Image 1" loading="lazy"/>
+                      <div class="card-image ">
                       </div>
                      <div class="text">
                         <h3>SoliTek - The European Manufacturer of Solar Panels</h3>
@@ -191,7 +190,6 @@
                     <!-- Card 2 -->
                     <div class="card">
                       <div class="card-image">
-                        <img src="logo.jpg" alt="Image 2" loading="lazy"/>
                       </div>
                       <div class="text">
                         <h3>Sunsynk - No Power No Problem</h3>
@@ -210,7 +208,6 @@
                     <!-- Card 3 -->
                     <div class="card">
                       <div class="card-image">
-                        <img src="logo.jpg" alt="Image 3" loading="lazy"/>
                       </div>
                     <div class="text">
                         <h3>BYD - Electrifying Transport</h3>
@@ -228,7 +225,6 @@
                     <!-- Card 4 -->
                     <div class="card">
                       <div class="card-image">
-                        <img src="logo.jpg" alt="Image 4" loading="lazy"/>
                       </div>
                       <div class="text">
                         <h3>REC - Solar's Most Trusted</h3>
@@ -354,7 +350,7 @@
                             <h2>what they say about WOC</h2>
                             <p>More than 3000 users have been helped by World Online Course.</p>
                      </div>
-                     <!-- Right-Box -->
+                     <!-- Right-Box-Testimonials Slider -->
                      <div class="box-right">
                         <div class="box-content">
                             <!--  -->
@@ -373,16 +369,16 @@
                             “Studying at WOC is fun, the curriculum is complete, the instructors are competent, and the assignments given are also relevant to the current scope of work.”
                           </p>
                           <!--  -->
-                          <div class="user-info">
-                            <img src="logo.jpg" alt="Mr.Penguin" loading="lazy"/>
+                          <div class="user-info active">
+                            <img src="imge/Mr.Penguin.jpg" alt="Mr.Penguin" />
                             <div>
                               <span class="user-name">Mr.Penguin</span>
                               <span class="user-position">Front-End</span>
                             </div>
                             <!-- Navigation Arrows -->
                             <div class="navigation">
-                              <span class="arrow left">&#8249;</span>
-                              <span class="arrow right">&#8250;</span>
+                              <span class="arrow left" id="next">&#8249;</span>
+                              <span class="arrow right" id="prev">&#8250;</span>
                             </div>
                           </div>
                         </div>
@@ -396,7 +392,7 @@
                     <!--  -->
                   <div class="cards-top">
                     <div class="Quick-link">
-                        <img src="logo.jpg" alt="Mr.Penguin" loading="lazy">
+                        <img src="imge/Mr.Penguin.jpg" alt="Mr.Penguin" >
                         <div class="link">
                             <span><a href="#">About</a></span>
                             <span><a href="#">Careers</a></span>
@@ -431,7 +427,6 @@
              </footer>
             <!-- End-Footer -->
     <!-- main-js -->
-     <!--رشة جافا سكريبت من فوق -->
 <script>
         const up = document.querySelector(".up");
         const navEl = document.querySelector('.nav');
@@ -451,6 +446,84 @@
     navEl.classList.toggle('navOpen');
     navMenu.classList.toggle('menuOpen');
     });
+    // 
+// Step-One-All Data in Array
+const Alltest = [
+{
+  comment: "“Sliding on ice all day is my cardio! If only coding was as easy as waddling around!”",
+  name: "Mr.Penguin",
+  position: "Front-End",
+  image: "imge/Mr.Penguin.jpg",
+},
+{
+  comment: "“Balancing design and web-slinging isn’t easy, but hey, at least I don’t have to fight Green Goblin today!”",
+  name: "Spider Man",
+  position: "UI/UX Designer",
+  image: "imge/spiderMan.jfif",
+},
+{
+  comment: "“Quack! Coding is easy when you’re a duck… unless the internet goes down. Then it’s just a lot of quacking and flapping!”",
+  name: "Dr. Duck",
+  position: "Back-End Developer",
+  image: "imge/D.jfif",
+},
+{
+  comment: "“If you’ve never fought a battle while debugging a server, are you even a true warrior? Also, where’s my tuna?!”",
+  name: "Cat soldier",
+  position: "Back-End Developer",
+  image: "imge/cat-3.jfif",
+},
+{
+  comment: "“Hopping between tasks is my specialty. Croak! I mean, what else did you expect from a frog in a tie?”",
+  name: "Kermit the frog",
+  position: "Back-End Developer",
+  image: "imge/gr.jfif",
+},
+];
+
+// Get All Elment DOM 
+const commentBox = document.querySelector(".box-comment");
+const userName = document.querySelector(".user-name");
+const userPosition = document.querySelector(".user-position");
+const userImage = document.querySelector(".user-info img");
+const leftArrow = document.querySelector(".arrow.left");
+const rightArrow = document.querySelector(".arrow.right");
+const dotsSpan = document.querySelectorAll(".doat span");
+
+// العداد
+let indexNumber = 0;
+
+function updateTestimonial(index) {
+  const testimonial = Alltest[index];
+  commentBox.textContent = testimonial.comment;
+  userName.textContent = testimonial.name;
+  userPosition.textContent = testimonial.position;
+  userImage.src = testimonial.image;
+
+  //(dotsSpan)
+  dotsSpan.forEach((dot, i) => {
+    dot.classList.toggle("active", i === index);
+  });
+}
+
+rightArrow.addEventListener("click", () => {
+  indexNumber = (indexNumber + 1) % Alltest.length; 
+  updateTestimonial(indexNumber);
+});
+
+leftArrow.addEventListener("click", () => {
+  indexNumber = (indexNumber - 1 + Alltest.length) % Alltest.length; // يرجع لآخر عنصر عند البداية
+  updateTestimonial(indexNumber);
+});
+
+dotsSpan.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    indexNumber = index; 
+    updateTestimonial(indexNumber);
+  });
+});
+updateTestimonial(indexNumber);
+
  </script>
 </body>
 </html>

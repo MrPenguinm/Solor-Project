@@ -643,15 +643,19 @@ width: 80%;
 }
 /*  */
 .section-3 .container .box {
-  box-shadow: 0 2px 10px #0000001a;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
-  transition: var(--main-transtion);
+  transition:var(--main-transtion);
 }
-.section-3 .container .box:hover {
-  box-shadow:  0 2px 10px #00000095;
+.section-3 .container .box:hover,
+.section-3 .container .box img:hover{
+  border-radius: 6px 6px 0 0;
+  box-shadow: none;
 }
+
 .section-3 .container .box img{
 width: 100%;
+transition: var(--main-transtion);
 }
 .section-3 .container .box .info{
   padding: 10px;
@@ -742,7 +746,8 @@ width: 100%;
   }
 
   .section-4 .box h2 {
-    font-size: 32px; /
+    font-size: 32px; 
+    margin-bottom: 20px;
   }
 
   .section-4 .box p {
@@ -834,7 +839,6 @@ width: 100%;
   gap: 20px;
 }
 
-
 .section-5 .container .cards .card {
   background-color: #f6fdf7; 
   border: 1px solid var(--main-color);
@@ -848,11 +852,26 @@ width: 100%;
 .section-5 .container .cards .card:hover  {
  transform: translateY(-5px);
 }
-.section-5 .container .cards .card-image img {
-  width: 100%;
+.section-5 .container .card .card-image {
+  background-repeat: no-repeat;
   border-radius: 12px;
-  object-fit: cover;
-  margin-bottom: 20px;
+  background-size: cover;
+  background-position: inherit;
+  height: 12rem;
+  width: 75%;
+  margin: 0 auto;
+}
+.section-5 .container .card:nth-child(1) .card-image {
+  background-image: url('imge/cat.jfif');
+}
+.section-5 .container .card:nth-child(2) .card-image {
+  background-image: url('imge/bee.jfif');
+}
+.section-5 .container .card:nth-child(3) .card-image {
+  background-image: url('imge/batman.jfif');
+}
+.section-5 .container .card:nth-child(4) .card-image {
+  background-image: url('imge/cat-2.jfif');
 }
 
 .section-5 .cards .card h3 {
@@ -910,7 +929,6 @@ width: 100%;
   }
 }
 /* End-section-5 */
-/* قسم مقرف الحمد لله خلص  */
 /* Start-section-6 */
 .section-6 {
   padding: 100px 0;
@@ -944,7 +962,13 @@ width: 100%;
   border: 1px solid var(--main-color);
   box-sizing: border-box;
   border-radius: 12px;
-
+  cursor: pointer;
+}
+.section-6 .container .box svg {
+  transition: 0.2s cubic-bezier(0.33, -0.05, 0.49, 0.9);
+} 
+.section-6 .container .box:hover svg {
+  transform: translateX(50px);
 }
 .section-6 .container .box .info h3 {
   font-size: 20px;
@@ -959,12 +983,16 @@ width: 100%;
   line-height: 1.5;
   text-align: left;
 }
+
 @media (max-width:991px) {
   .section-6 .container {
     flex-direction: column;
   }
   .section-6 .container .box {
     text-align: center;
+  }
+  .section-6 .container .box:hover svg {
+    transform: translateY(-5px);
   }
 }
 /* End-section-6 */
@@ -1016,6 +1044,7 @@ width: 100%;
 .section-7 .box-content .head {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 .section-7 .box-content{
@@ -1294,6 +1323,11 @@ footer .container .cards-bottm .link a {
   color: #92989F;
   font-size: 12px;
   position: relative;
+  transition: var(--main-transtion);
+
+}
+footer .container .cards-bottm a:hover {
+  color: white;
 }
 
 footer .container .cards-bottm .link a::after {
@@ -1310,6 +1344,11 @@ footer .container .cards-bottm .Copyright {
   font-size: 12px;
   text-align: center;
   margin: 0;
+  transition: var(--main-transtion);
+  cursor: pointer;
+}
+footer .container .cards-bottm .Copyright:hover {
+  color: white;
 }
 
 /*  Responsive */
